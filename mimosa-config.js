@@ -9,7 +9,7 @@ exports.config = {
     "minify-css",
     "bower",
     "csslint",
-    "eslint",
+    "jshint",
     "require-lint",
     "minify-svg",
     "minify-html",
@@ -17,14 +17,6 @@ exports.config = {
     "testem-require",
     "web-package"
   ],
-  eslint: {
-    options: {
-      env: {
-        browser: true,
-        amd: true
-      }
-    }
-  },
   testemRequire: {
     mochaSetup: {
       globals:["jQuery*"]

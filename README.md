@@ -113,7 +113,7 @@ modules: [
 
 * `csslint`, [on GitHub](https://github.com/dbashford/mimosa-csslint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your CSS using [csslint](http://csslint.net/).
 
-* `eslint`, [on GitHub](https://github.com/dbashford/mimosa-eslint), [config details](https://github.com/dbashford/mimosa-eslint#default-config). This module will run [ESLint](http://eslint.org/) over your JavaScript code and output any warnings/errors to the console.
+* `csslint`, [on GitHub](https://github.com/dbashford/mimosa-jshint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
 
 * `require-lint`, [on GitHub](https://github.com/dbashford/mimosa-require-lint). This module will detect when you have brought in AMD dependencies that are not then subsequently used.
 
