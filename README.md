@@ -72,7 +72,7 @@ For the most part, the commands you'll use are `mimosa watch` and `mimosa build`
 
 ## Functionality
 
-The best way to cover what this skeleton can do is to review the `modules` array of the `mimosa-config.js`.
+The best way to cover what this skeleton can do is to review the `modules` array, which makes up almost all of this skeletons's configuration, located in the `mimosa-config.js` file
 
 ```javascript
 modules: [
@@ -85,7 +85,7 @@ modules: [
   "minify-css",
   "bower",
   "csslint",
-  "eslint",
+  "jslint",
   "require-lint",
   "minify-svg",
   "minify-html",
@@ -113,7 +113,7 @@ modules: [
 
 * `csslint`, [on GitHub](https://github.com/dbashford/mimosa-csslint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your CSS using [csslint](http://csslint.net/).
 
-* `csslint`, [on GitHub](https://github.com/dbashford/mimosa-jshint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
+* `jshint`, [on GitHub](https://github.com/dbashford/mimosa-jshint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
 
 * `require-lint`, [on GitHub](https://github.com/dbashford/mimosa-require-lint). This module will detect when you have brought in AMD dependencies that are not then subsequently used.
 
