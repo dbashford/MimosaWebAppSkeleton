@@ -16,7 +16,7 @@ This web app skeleton for the [Mimosa](http://mimosa.io) build tool is a great s
 * `cd example`
 * `npm install`, this installs some server resources like Express. While this skeleton comes with a server, you don't need your own server, see the Server section below.
 * `mimosa watch --server`
-* [Hit localhost:3000](http://localhost:3000)
+* [localhost:3000](http://localhost:3000)
 
 ## Before you go any further...
 
@@ -68,7 +68,7 @@ Usage: mimosa [options] [command]
     mod:config [options] [name] Print out the configuration snippet for a module to the console
 ```
 
-For the most part, the commands you'll use are `mimosa watch` and `mimosa build`.  Each of those commands have their own flags for performing for packaging (`mimosa build -p`) or building optimized apps (`mimosa build -o`) and so on.  All of the commands that come with the core modules are [documented on the website(http://mimosa.io/commands.html).
+For the most part, the commands you'll use are `mimosa watch` and `mimosa build`.  Each of those commands have their own flags for performing for packaging (`mimosa build -p`) or building optimized apps (`mimosa build -o`) and so on.  All of the commands that come with the core modules are [documented on the website](http://mimosa.io/commands.html).
 
 ## Functionality
 
@@ -97,7 +97,7 @@ modules: [
 
 * `copy`, [on GitHub](https://github.com/dbashford/mimosa-copy), [in docs](http://mimosa.io/compilers.html#copy), [config details](http://mimosa.io/configuration.html#copy). This module is a "compiler" responsible for transforming input text to output text by simply copying the contents. This module handles things like pure `.js` or `.css`.  Other compilers, like the [one for CoffeeScript](https://github.com/dbashford/mimosa-coffeescript), for `.coffee` files, transform input to output by transpiling the code.
 
-* `streamCopy`, [on GitHub](https://github.com/dbashford/mimosa-stream-copy). This module performs copies on files that need no other form of processing. `.js` files, for instance, may need linting or minifying, but `.mp3` or `.xml` files need no other processing other than to be copied over from source directories to output directories.  This performs a fast copy based on file extension using streams for those files.
+* `streamCopy`, [on GitHub](https://github.com/dbashford/mimosa-stream-copy). This module performs copies on files that need no other form of processing. `.js` files, for instance, may need linting or minifying, but `.mp3` or `.xml` files need no other processing other than to be copied over from source directories to output directories.  This performs a fast copy based on file extension using streams.
 
 * `server`, [on GitHub](https://github.com/dbashford/mimosa-server), [in docs](http://mimosa.io/server.html), [config details](http://mimosa.io/configuration.html#server). This module manages hosting your application. By default is expects to find a server in your project, but it can be configured to be server-less or to provided embedded hosting of assets.
 
@@ -131,7 +131,7 @@ modules: [
 
 Mimosa has [lots of those](http://mimosa.io/compilers.html). Mimosa will build source maps when it can.  It'll try real hard with your CSS pre-processors to only compile the files that matter.  And Mimosa will concatenate all your templates into a single file without being asked.
 
-To play with these, run a `mimosa new <projectName>` from the command line.
+To play with these, run a `mimosa new <projectName>` from the command line. `cd` into the project, run `mimosa watch -s` and check what Mimosa does for you.
 
 
 
