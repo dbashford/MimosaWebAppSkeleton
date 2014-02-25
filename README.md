@@ -41,7 +41,7 @@ You can also use an Express server embedded within Mimosa.  Routing for that ser
 
 ## Module Syntax
 
-There are many option for module syntax.
+There are many options for module syntax.
 
 This skeleton is opinionated towards the use of [require.js](http://requirejs.org/) and AMD.  Optimization, testing and static analysis modules are included that understand require.js and know how to work with it.
 
