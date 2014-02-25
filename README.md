@@ -26,28 +26,24 @@ Make some code changes and see live-reload in action.
 
 ## Packaging for Deployment
 
-1. `mimosa build -omp`.
+1. `mimosa build -omp`
 2. `cd dist`
 3. `node app.js`
 4. [localhost:3000](http://localhost:3000)
 
 `-omp` is shorthand for `--optimize --minify --package`. This command will run optimization, run all the minifiers and then package the result for deployment. The packaged result doesn't need Mimosa to run.
 
-## Before you go any farther...
-
-Look around the file structure.  Check out the virtual lack of config in the `mimosa-config.js`.  Hopefully the next few sections will cover some answers to questions that arise while you check stuff out.
-
 ## Server
 
-This skeleton comes equipped with its own Express server.  You can plug in your own node.js server if you have one.  Mimosa can execute it if that server matches the same interface (exports a `startServer`).
+This skeleton comes equipped with its own Express server.  You can plug in your own node.js server if you have one.  Mimosa can execute it if that server matches the same interface (exports a `startServer`).  You can also re-route the output to be dumped into the `public` directory of your server.
 
 You can also use an Express server embedded within Mimosa.  Routing for that server is limited, but it is typically enough for small applications.  See [Mimosa's server docs](http://mimosa.io/server.html) for more information.
 
 ## Module Syntax
 
-There are options here.
+There are many option for module syntax.
 
-This skeleton is opinionated towards the use of [require.js](http://requirejs.org/).  Optimization, testing and static analysis modules are included that understand require.js and know how to work with it.
+This skeleton is opinionated towards the use of [require.js](http://requirejs.org/) and AMD.  Optimization, testing and static analysis modules are included that understand require.js and know how to work with it.
 
 If you prefer CommonJS syntax, but you have no problem with require.js, there [is a module](https://github.com/dbashford/mimosa-require-commonjs) that will wrap your CommonJS code in the [simplified wrapper](http://requirejs.org/docs/commonjs.html) during builds.  Just toss that in and keep going.
 
@@ -87,7 +83,7 @@ For the most part, the commands you'll use are `mimosa watch` and `mimosa build`
 
 ## Functionality
 
-The best way to cover what this skeleton can do is to review the `modules` array, which makes up almost all of this skeletons's configuration, located in the `mimosa-config.js` file.
+The best way to cover what this skeleton can do is to review the `modules` array -- which makes up almost all of this skeletons's configuration -- located in the `mimosa-config.js` file.
 
 ```javascript
 modules: [
