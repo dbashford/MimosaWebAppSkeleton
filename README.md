@@ -1,6 +1,3 @@
-Work in Progress
-=====
-
 MimosaWebAppSkeleton
 ======
 
@@ -14,9 +11,11 @@ This web app skeleton for the [Mimosa](http://mimosa.io) build tool is a great s
 2. `npm install -g mimosa`
 3. `git clone https://github.com/dbashford/MimosaWebAppSkeleton example`, where `example` is the name of your app.
 4. `cd example`
-5. `npm install`, this installs some server resources like Express. While this skeleton comes with a server, you don't need your own server, see the Server section below.
+5. `npm install`, this installs some server resources like Express. While this skeleton comes with a server, you don't need your own server, see the [Server](#server) section below.
 6. `mimosa watch --server`
 7. [localhost:3000](http://localhost:3000)
+
+Make some code changes and see live-reload in action.
 
 ## Optimize
 
@@ -32,11 +31,11 @@ This web app skeleton for the [Mimosa](http://mimosa.io) build tool is a great s
 3. `node app.js`
 4. [localhost:3000](http://localhost:3000)
 
-`-omp` is shorthand for `--optimize --minify --package`. This command will run optimization, run all the minifiers and then package the result for deployment.
+`-omp` is shorthand for `--optimize --minify --package`. This command will run optimization, run all the minifiers and then package the result for deployment. The packaged result doesn't need Mimosa to run.
 
-## Before you go any further...
+## Before you go any farther...
 
-Just look around the file structure.  Check out the virtual lack of config in the `mimosa-config.js`.  Play with `mimosa --help` and the `--help` for the various commands.  Hopefully the next few sections will cover some answers to questions that arise while you check stuff out.
+Look around the file structure.  Check out the virtual lack of config in the `mimosa-config.js`.  Hopefully the next few sections will cover some answers to questions that arise while you check stuff out.
 
 ## Server
 
@@ -84,11 +83,11 @@ Usage: mimosa [options] [command]
     mod:config [options] [name] Print out the configuration snippet for a module to the console
 ```
 
-For the most part, the commands you'll use are `mimosa watch` and `mimosa build`.  Each of those commands have their own flags for performing for packaging (`mimosa build -p`) or building optimized apps (`mimosa build -o`) and so on.  All of the commands that come with the core modules are [documented on the website](http://mimosa.io/commands.html).
+For the most part, the commands you'll use are `mimosa watch` and `mimosa build`.  All of the commands that come with the core modules are [documented on the website](http://mimosa.io/commands.html).
 
 ## Functionality
 
-The best way to cover what this skeleton can do is to review the `modules` array, which makes up almost all of this skeletons's configuration, located in the `mimosa-config.js` file
+The best way to cover what this skeleton can do is to review the `modules` array, which makes up almost all of this skeletons's configuration, located in the `mimosa-config.js` file.
 
 ```javascript
 modules: [
