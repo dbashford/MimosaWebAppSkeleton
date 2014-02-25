@@ -121,7 +121,7 @@ modules: [
 
 * `minify-html`, [on GitHub](https://github.com/dbashford/mimosa-minify-html). This module minifies `.html` files when the `--minify` flag is ticked.
 
-* `minify-img`, [on GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images when the `--minify` flag is ticked.
+* `minify-img`, [on GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images using the `minimage` command.  `mimosa minimage`.  It will overwrite the images in the source code folder when the `--overwrite` flag is added.
 
 * `testem-require`, [on GitHub](https://github.com/dbashford/mimosa-testem-require), [config details](https://github.com/dbashford/mimosa-testem-require#default-config). This module incorporates [Sinon](http://sinonjs.org/), [Chai](http://chaijs.com/), [Mocha](http://visionmedia.github.io/mocha/), [Testem](https://github.com/airportyh/testem) and [PhantomJS](http://phantomjs.org/) and understands require.js to build out a full test suite so that all you need to do is write tests.
 
