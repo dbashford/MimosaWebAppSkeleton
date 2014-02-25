@@ -19,7 +19,7 @@ Make some code changes and see live-reload in action.
 
 ## Optimize
 
-1. `mimosa watch -oms`.
+1. `mimosa watch -oms`
 2. [localhost:3000](http://localhost:3000)
 
 `-oms` is shorthand for `--optimize --minify --server`. This runs all the minifiers, runs the r.js optimization, and then starts a server.  The JavaScript for the app will be both minified and concatenated.
@@ -110,37 +110,37 @@ modules: [
 ]
 ```
 
-* `copy`, [on GitHub](https://github.com/dbashford/mimosa-copy), [in docs](http://mimosa.io/compilers.html#copy), [config details](http://mimosa.io/configuration.html#copy). This module is a "compiler" responsible for transforming input text to output text by simply copying the contents. This module handles things like pure `.js` or `.css`.  Other compilers, like the [one for CoffeeScript](https://github.com/dbashford/mimosa-coffeescript), for `.coffee` files, transform input to output by transpiling the code.
+* `copy`, [GitHub](https://github.com/dbashford/mimosa-copy), [docs](http://mimosa.io/compilers.html#copy), [config details](http://mimosa.io/configuration.html#copy). This module is a "compiler" responsible for transforming input text to output text by copying the contents. This module handles files like pure `.js` or `.css`. Other compilers, like the [one for CoffeeScript](https://github.com/dbashford/mimosa-coffeescript), for `.coffee` files, transform input to output through transpiling.
 
-* `streamCopy`, [on GitHub](https://github.com/dbashford/mimosa-stream-copy). This module performs copies on files that need no other form of processing. `.js` files, for instance, may need linting or minifying, but `.mp3` or `.xml` files need no other processing other than to be copied over from source directories to output directories.  This performs a fast copy based on file extension using streams.
+* `streamCopy`, [GitHub](https://github.com/dbashford/mimosa-stream-copy). This module copies files that need no other form of processing. `.js` files, for instance, may need linting or minifying, but `.mp3` or `.xml` files need no other processing other than to be copied over from source directories to output directories.  This performs a fast copy based on file extension using node.js streams.
 
-* `server`, [on GitHub](https://github.com/dbashford/mimosa-server), [in docs](http://mimosa.io/server.html), [config details](http://mimosa.io/configuration.html#server). This module manages hosting your application. By default is expects to find a server in your project, but it can be configured to be server-less or to provided embedded hosting of assets.
+* `server`, [GitHub](https://github.com/dbashford/mimosa-server), [docs](http://mimosa.io/server.html), [config details](http://mimosa.io/configuration.html#server). This module manages hosting your application. By default it expects to find a server in your project, but it can be configured to be server-less or to provide embedded hosting of assets.
 
-* `live-reload`, [on GitHub](https://github.com/dbashford/mimosa-live-reload), [in docs](http://mimosa.io/utilities.html#reload), [config details](http://mimosa.io/configuration.html#lint). This module will reload your browser when assets change on the server.  No plugins needed.  The skeleton comes equipped with the necessary client scripts to have included in your app to enable live reload.
+* `live-reload`, [GitHub](https://github.com/dbashford/mimosa-live-reload), [docs](http://mimosa.io/utilities.html#reload), [config details](http://mimosa.io/configuration.html#lint). This module will reload assets or your browser when assets as saved.  No plugins needed.  The skeleton comes equipped with the necessary client scripts to include in your app to enable live reload.
 
-* `require`, [on GitHub](https://github.com/dbashford/mimosa-require), [in docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#require). This module manages optimization using [r.js](https://github.com/jrburke/r.js/). It is responsible for, among other things, validating AMD paths and determining how to build an r.js configuration.
+* `require`, [GitHub](https://github.com/dbashford/mimosa-require), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#require). This module manages optimization using [r.js](https://github.com/jrburke/r.js/). It is responsible for, among other things, validating AMD paths and determining how to build an r.js configuration.
 
-* `minify-js`,[on GitHub](https://github.com/dbashford/mimosa-minify-js), [in docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module uses [Uglify](https://github.com/mishoo/UglifyJS2) to minify your JavaScript assets when the `--minify` flag is ticked.
+* `minify-js`,[GitHub](https://github.com/dbashford/mimosa-minify-js), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module uses [Uglify](https://github.com/mishoo/UglifyJS2) to minify your JavaScript assets when the `--minify` flag is ticked.
 
-* `minify-css`, [on GitHub](https://github.com/dbashford/mimosa-minify-css), [in docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module minifies CSS when the `--minify` flag is ticked.
+* `minify-css`, [GitHub](https://github.com/dbashford/mimosa-minify-css), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module minifies CSS when the `--minify` flag is ticked.
 
-* `bower`, [on GitHub](https://github.com/dbashford/mimosa-bower), [in docs](http://mimosa.io/utilities.html), [config details](http://mimosa.io/configuration.html#bower). This module provides integration with [Bower](http://bower.io/).
+* `bower`, [GitHub](https://github.com/dbashford/mimosa-bower), [docs](http://mimosa.io/utilities.html), [config details](http://mimosa.io/configuration.html#bower). This module provides integration with [Bower](http://bower.io/).
 
-* `csslint`, [on GitHub](https://github.com/dbashford/mimosa-csslint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your CSS using [csslint](http://csslint.net/).
+* `csslint`, [GitHub](https://github.com/dbashford/mimosa-csslint), [docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your CSS using [csslint](http://csslint.net/).
 
-* `jshint`, [on GitHub](https://github.com/dbashford/mimosa-jshint), [in docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
+* `jshint`, [GitHub](https://github.com/dbashford/mimosa-jshint), [docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
 
-* `require-lint`, [on GitHub](https://github.com/dbashford/mimosa-require-lint). This module will detect when you have brought in AMD dependencies that are not then subsequently used.
+* `require-lint`, [GitHub](https://github.com/dbashford/mimosa-require-lint). This module will detect when you have brought in AMD dependencies that are not then subsequently used.
 
-* `minify-svg`, [on GitHub](https://github.com/dbashford/mimosa-minify-svg). This module minifies `.svg` files when the `--minify` flag is ticked.
+* `minify-svg`, [GitHub](https://github.com/dbashford/mimosa-minify-svg). This module minifies `.svg` files when the `--minify` flag is ticked.
 
-* `minify-html`, [on GitHub](https://github.com/dbashford/mimosa-minify-html). This module minifies `.html` files when the `--minify` flag is ticked.
+* `minify-html`, [GitHub](https://github.com/dbashford/mimosa-minify-html). This module minifies `.html` files when the `--minify` flag is ticked.
 
-* `minify-img`, [on GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images using the `minimage` command.  `mimosa minimage`.  It will overwrite the images in the source code folder when the `--overwrite` flag is added.
+* `minify-img`, [GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images using the `minimage` command.  `mimosa minimage`.  It will overwrite the images in the source code folder when the `--overwrite` flag is added.
 
-* `testem-require`, [on GitHub](https://github.com/dbashford/mimosa-testem-require), [config details](https://github.com/dbashford/mimosa-testem-require#default-config). This module incorporates [Sinon](http://sinonjs.org/), [Chai](http://chaijs.com/), [Mocha](http://visionmedia.github.io/mocha/), [Testem](https://github.com/airportyh/testem) and [PhantomJS](http://phantomjs.org/) and understands require.js to build out a full test suite so that all you need to do is write tests.
+* `testem-require`, [GitHub](https://github.com/dbashford/mimosa-testem-require), [config details](https://github.com/dbashford/mimosa-testem-require#default-config). This module incorporates [Sinon](http://sinonjs.org/), [Chai](http://chaijs.com/), [Mocha](http://visionmedia.github.io/mocha/), [Testem](https://github.com/airportyh/testem) and [PhantomJS](http://phantomjs.org/) and understands require.js to build out a full test suite so that all you need to do is write tests.
 
-* `web-package`, [on GitHub](https://github.com/dbashford/mimosa-web-package), [config details](https://github.com/dbashford/mimosa-web-package#default-config). When `mimosa build` is run with the `-p/--package` flag, this module builds out a `dist` folder with all of the compiled assets and a stubbed out config so that you can run `node app.js` to start up your app without Mimosa being involved.
+* `web-package`, [GitHub](https://github.com/dbashford/mimosa-web-package), [config details](https://github.com/dbashford/mimosa-web-package#default-config). When `mimosa build` is run with the `-p/--package` flag, this module builds out a `dist` folder with all of the compiled assets and a stubbed out config so that you can run `node app.js` to start up your app without Mimosa being involved.
 
 ## What about JS Transpilers, CSS Pre-Processors and Micro-Templaters?
 
