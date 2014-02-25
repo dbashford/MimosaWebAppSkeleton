@@ -120,9 +120,9 @@ modules: [
 
 * `require`, [GitHub](https://github.com/dbashford/mimosa-require), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#require). This module manages optimization using [r.js](https://github.com/jrburke/r.js/). It is responsible for, among other things, validating AMD paths and determining how to build an r.js configuration.
 
-* `minify-js`,[GitHub](https://github.com/dbashford/mimosa-minify-js), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module uses [Uglify](https://github.com/mishoo/UglifyJS2) to minify your JavaScript assets when the `--minify` flag is ticked.
+* `minify-js`,[GitHub](https://github.com/dbashford/mimosa-minify-js), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module uses [Uglify](https://github.com/mishoo/UglifyJS2) to minify your JavaScript assets when the `--minify` flag is used.
 
-* `minify-css`, [GitHub](https://github.com/dbashford/mimosa-minify-css), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module minifies CSS when the `--minify` flag is ticked.
+* `minify-css`, [GitHub](https://github.com/dbashford/mimosa-minify-css), [docs](http://mimosa.io/optimization.html#min), [config details](http://mimosa.io/configuration.html#minify). This module minifies CSS when the `--minify` flag is used.
 
 * `bower`, [GitHub](https://github.com/dbashford/mimosa-bower), [docs](http://mimosa.io/utilities.html), [config details](http://mimosa.io/configuration.html#bower). This module provides integration with [Bower](http://bower.io/).
 
@@ -132,9 +132,9 @@ modules: [
 
 * `require-lint`, [GitHub](https://github.com/dbashford/mimosa-require-lint). This module will detect when you have brought in AMD dependencies that are not then subsequently used.
 
-* `minify-svg`, [GitHub](https://github.com/dbashford/mimosa-minify-svg). This module minifies `.svg` files when the `--minify` flag is ticked.
+* `minify-svg`, [GitHub](https://github.com/dbashford/mimosa-minify-svg). This module minifies `.svg` files when the `--minify` flag is used.
 
-* `minify-html`, [GitHub](https://github.com/dbashford/mimosa-minify-html). This module minifies `.html` files when the `--minify` flag is ticked.
+* `minify-html`, [GitHub](https://github.com/dbashford/mimosa-minify-html). This module minifies `.html` files when the `--minify` flag is used.
 
 * `minify-img`, [GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images using the `minimage` command.  `mimosa minimage`.  It will overwrite the images in the source code folder when the `--overwrite` flag is added.
 
