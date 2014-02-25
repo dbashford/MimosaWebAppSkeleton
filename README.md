@@ -81,6 +81,12 @@ Usage: mimosa [options] [command]
 
 For the most part, the commands you'll use are `mimosa watch` and `mimosa build`.  All of the commands that come with the core modules are [documented on the website](http://mimosa.io/commands.html).
 
+## Configuration
+
+The `mimosa-config.js` is the configuration file for Mimosa.  Because of Mimosa's focus on defaults and some (configurable) conventions, the configuration is very small.
+
+That doesn't mean the modules aren't configurable. The `mimosa-config-documented.coffee` is a file which documents all of the configuration available for each of the configured modules.  It is a slightly modified version of the `mimosa-config-documented.coffee` that is written when you run the `mimosa config` command.
+
 ## Functionality
 
 The best way to cover what this skeleton can do is to review the `modules` array -- which makes up almost all of this skeletons's configuration -- located in the `mimosa-config.js` file.
@@ -143,8 +149,3 @@ modules: [
 Mimosa has [lots of those](http://mimosa.io/compilers.html). Mimosa will build source maps when it can.  It'll try real hard with your CSS pre-processors to only compile the files that matter.  And Mimosa will concatenate all your templates into a single file without being asked.
 
 To play with these, run a `mimosa new <projectName>` from the command line. `cd` into the project, run `mimosa watch -s` and check what Mimosa does for you.
-
-
-
-
-
