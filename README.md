@@ -10,13 +10,29 @@ This web app skeleton for the [Mimosa](http://mimosa.io) build tool is a great s
 
 ## Getting Started
 
-* You need to have [node.js](http://nodejs.org/) installed.
-* `npm install -g mimosa`
-* `git clone https://github.com/dbashford/MimosaWebAppSkeleton example`, where `example` is the name of your app.
-* `cd example`
-* `npm install`, this installs some server resources like Express. While this skeleton comes with a server, you don't need your own server, see the Server section below.
-* `mimosa watch --server`
-* [localhost:3000](http://localhost:3000)
+1. You need to have [node.js](http://nodejs.org/) installed.
+2. `npm install -g mimosa`
+3. `git clone https://github.com/dbashford/MimosaWebAppSkeleton example`, where `example` is the name of your app.
+4. `cd example`
+5. `npm install`, this installs some server resources like Express. While this skeleton comes with a server, you don't need your own server, see the Server section below.
+6. `mimosa watch --server`
+7. [localhost:3000](http://localhost:3000)
+
+## Optimize
+
+1. `mimosa watch -oms`.
+2. [localhost:3000](http://localhost:3000)
+
+`-oms` is shorthand for `--optimize --minify --server`. This runs all the minifiers, runs the r.js optimization, and then starts a server.  The JavaScript for the app will be both minified and concatenated.
+
+## Packaging for Deployment
+
+1. `mimosa build -omp`.
+2. `cd dist`
+3. `node app.js`
+4. [localhost:3000](http://localhost:3000)
+
+`-omp` is shorthand for `--optimize --minify --package`. This command will run optimization, run all the minifiers and then package the result for deployment.
 
 ## Before you go any further...
 

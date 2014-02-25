@@ -4,6 +4,6 @@ require({
   }
 }, ["app/example-view"], function(view) {
   "use strict";
-  view.render("body");
+  view("body");
 });
 
