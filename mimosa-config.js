@@ -8,6 +8,7 @@ exports.config = {
     "minify-js",
     "minify-css",
     "bower",
+    "autoprefixer",
     "csslint",
     "jshint",
     "require-lint",

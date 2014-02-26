@@ -375,4 +375,11 @@ exports.config = {
     exclude:["README.md","node_modules","mimosa-config.coffee","mimosa-config.js","assets",".git",".gitignore"]
     appjs: "app.js"             # name of the output app.js file which bootstraps the application,
                                 # when set to null, web-package will not output a bootstrap file
+
+  autoprefixer:            # settings for autoprefixer module
+    browsers:[]            # list of browsers to use, see the info on at
+                           # https://github.com/ai/autoprefixer#browsers
+    map: true              # whether or not to create inline maps, maps are always inline
+    cascade: true          # path to directory where any additional custom eshint rules exist
+
 }

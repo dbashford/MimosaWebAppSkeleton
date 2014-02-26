@@ -128,6 +128,8 @@ modules: [
 
 * `bower`, [GitHub](https://github.com/dbashford/mimosa-bower), [docs](http://mimosa.io/utilities.html), [config details](http://mimosa.io/configuration.html#bower). This module provides integration with [Bower](http://bower.io/).
 
+* `autoprefixer`, [GitHub](https://github.com/dbashford/mimosa-autoprefixer), [config](https://github.com/dbashford/mimosa-autoprefixer#default-config). This module will run the [autoprefixer](https://github.com/ai/autoprefixer) over your CSS and add vendor prefixes to CSS rules.
+
 * `csslint`, [GitHub](https://github.com/dbashford/mimosa-csslint), [docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your CSS using [csslint](http://csslint.net/).
 
 * `jshint`, [GitHub](https://github.com/dbashford/mimosa-jshint), [docs](http://mimosa.io/utilities.html#lint), [config details](http://mimosa.io/configuration.html#lint). This module lints your JavaScript using [jshint](http://www.jshint.com/). Alternatively, an [ESLint module](http://www.eslint.org) is available.
