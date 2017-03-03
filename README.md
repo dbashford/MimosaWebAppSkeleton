@@ -142,7 +142,7 @@ modules: [
 
 * `minify-img`, [GitHub](https://github.com/dbashford/mimosa-minify-img). This module minifies images using the `minimage` command.  `mimosa minimage`.  It will overwrite the images in the source code folder when the `--overwrite` flag is added.
 
-* `testem-require`, [GitHub](https://github.com/dbashford/mimosa-testem-require), [config details](https://github.com/dbashford/mimosa-testem-require#default-config). This module incorporates [Sinon](http://sinonjs.org/), [Chai](http://chaijs.com/), [Mocha](http://visionmedia.github.io/mocha/), [Testem](https://github.com/airportyh/testem) and [PhantomJS](http://phantomjs.org/) and understands require.js to build out a full test suite so that all you need to do is write tests.
+* `testem-require`, [GitHub](https://github.com/dbashford/mimosa-testem-require), [config details](https://github.com/dbashford/mimosa-testem-require#default-config). This module incorporates [Sinon](http://sinonjs.org/), [Chai](http://chaijs.com/), [Mocha](http://mochajs.org/), [Testem](https://github.com/airportyh/testem) and [PhantomJS](http://phantomjs.org/) and understands require.js to build out a full test suite so that all you need to do is write tests.
 
 * `web-package`, [GitHub](https://github.com/dbashford/mimosa-web-package), [config details](https://github.com/dbashford/mimosa-web-package#default-config). When `mimosa build` is run with the `-p/--package` flag, this module builds out a `dist` folder with all of the compiled assets and a stubbed out config so that you can run `node app.js` to start up your app without Mimosa being involved.
 
